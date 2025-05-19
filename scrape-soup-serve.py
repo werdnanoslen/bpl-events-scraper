@@ -45,7 +45,7 @@ def makeTime(date, time):
     return raw.astimezone(pytz.utc)
 
 
-for i in range(1, 4):
+for i in range(1, 3):
     URL = f"https://discover.bklynlibrary.org/?event=true&event=true&eventage=Adults&eventlocation=Central+Library%7C%7CCentral+Library%2C+Business+%26+Career+Center%7C%7CCentral+Library%2C+Info+Commons%7C%7CCrown+Heights+Library%7C%7CPacific+Library%7C%7CPark+Slope+Library%7C%7CBrooklyn+Heights+Library%7C%7CClinton+Hill+Library%7C%7CLibrary+for+Arts+%26+Culture&pagination={i}"  # noqa: E501
     page = Page(URL)
     results = SoupStrainer("div", attrs={"class": "result-detail-text"})

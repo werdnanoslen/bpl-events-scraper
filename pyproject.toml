@@ -7,7 +7,7 @@ authors = [
 ]
 license = {text = "GPLv3"}
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = ">=3.12"
 dependencies = [
     "requests (>=2.32.3,<3.0.0)",
     "beautifulsoup4 (>=4.13.4,<5.0.0)",
@@ -22,11 +22,3 @@ dependencies = [
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
-
-
-[tool.poetry]
-package-mode = false
-readme = "README.md"
-
-[tool.poetry.dependencies]
-python-dateutil = "^2.9.0.post0"
